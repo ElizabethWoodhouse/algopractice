@@ -1,0 +1,22 @@
+{
+  "name": "algopractice",
+  "version": "1.0.0",
+  "description": "repository where I practice data structures and algorithms",
+  "main": "arrayOfProducts.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElizabethWoodhouse/algopractice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ElizabethWoodhouse/algopractice/issues"
+  },
+  "homepage": "https://github.com/ElizabethWoodhouse/algopractice#readme"
+}

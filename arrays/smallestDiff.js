@@ -1,4 +1,5 @@
-/* prompt: 
+import { testEqual } from '../test.js';
+/* prompt:
   Write a function that takes in two non-empty arrays of integers, finds the
   pair of numbers (one from each array) whose absolute difference is closest to
   zero, and returns an array containing these two numbers, with the number from
@@ -44,16 +45,18 @@ function smallestDifference(arrayOne, arrayTwo) {
 //test
 const testOneArray = [-1, 5, 10, 20, 28, 3];
 const testOneSeq = [26, 134, 135, 15, 17];
-const testOne = smallestDifference(testOneArray, testOneSeq)[0] === 28;
-const testOne_ = smallestDifference(testOneArray, testOneSeq)[1] === 26;
+const testOne = testEqual(
+	smallestDifference(testOneArray, testOneSeq),
+	[28, 26]
+);
 
 const testTwoArray = [10, 0, 20, 25];
 const testTwoSeq = [1005, 1006, 1014, 1032, 1031];
 
-const testTwo = smallestDifference(testTwoArray, testTwoSeq)[0] === 25;
-const testTwo_ = smallestDifference(testTwoArray, testTwoSeq)[1] === 1005;
+const testTwo = testEqual(
+	smallestDifference(testTwoArray, testTwoSeq),
+	[25, 1005]
+);
 
 console.log(testOne);
-console.log(testOne_);
 console.log(testTwo);
-console.log(testTwo_);
