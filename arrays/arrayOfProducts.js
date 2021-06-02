@@ -1,4 +1,5 @@
-/* prompt: 
+import { testEqual } from '../test.js';
+/* prompt:
   Write a function that takes in a non-empty array of integers and returns an
   array of the same length, where each element in the output array is equal to
   the product of every other number in the input array.
@@ -66,19 +67,6 @@ function optimizedArrayOfProducts(array) {
 		otherNumPointer++;
 	}
 	return productArray;
-}
-
-//optimized solution
-function testEqual(testArray, outputArray) {
-	if (testArray.length !== outputArray.length) {
-		return false;
-	}
-	for (let i = 0; i < testArray.length; i++) {
-		if (testArray[i] !== outputArray[i]) {
-			return false;
-		}
-	}
-	return true;
 }
 
 const testOneArray = [5, 1, 4, 2];
