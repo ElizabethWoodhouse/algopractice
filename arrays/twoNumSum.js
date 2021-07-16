@@ -1,4 +1,4 @@
-import { testEqual } from '../test.js';
+import { testEqual } from './util/testEqualß';
 /* prompt:
   Write a function that takes in a non-empty array of distinct integers and an
   integer representing a target sum. If any two numbers in the input array sum
